@@ -1,0 +1,31 @@
+.container{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    top: 100px;
+    left: 150px;
+}
+
+.header{
+    font-weight: bolder;
+    position: relative;
+    font-family: cursive;
+    font-size: 45px;
+    text-shadow: 2px 2px 8px #f800ff;
+}
+
+#box{
+    width: 55%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+body{
+    background-color: aqua;
+}
+
+.checklist{
+    font-family: cursive;
+    font-size: larger;
+    font-weight: bolder;
+}
