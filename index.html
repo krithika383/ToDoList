@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>MyToDoList</title>
-  <script src="js/script.js"></script>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List With Local Storage</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
-        <div class="header">To Do List 2023</div>
-            <input type="text" id="box" name="task" placeholder="Add a task">&nbsp&nbsp&nbsp
-            <button onclick="postAction()" class="btn">
-              <i class='fa fa-send' id="send-icon"></i>
-            </button>
-            <br><br>
-            <div class="checklist">
-                <input type="checkbox">Learn a new language <br>
-                <input type="checkbox">Track expense and savings
-            </div>
+      <h2>To Do List 2023</h2>
+      <div id="new-task">
+        <input type="text" placeholder="Enter The Task Here..." />
+        <button id="push">
+          <i class='fa fa-send' id="send-icon"></i></button>
+      </div>
+      <div id="tasks"></div>
     </div>
-   
+    <!-- Script -->
+    <script src="./script.js"></script>
   </body>
+</html>
