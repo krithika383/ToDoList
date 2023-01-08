@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>MyToDoList</title>
+  <script src="js/script.js"></script>
   </head>
   <body>
     <div class="container">
         <div class="header">To Do List 2023</div>
-            <input type="text" id="box" name="task" placeholder="Add a task">
+            <input type="text" id="box" name="task" placeholder="Add a task">&nbsp&nbsp&nbsp
+            <button onclick="postAction()" class="btn">
+              <i class='fa fa-send' id="send-icon"></i>
+            </button>
             <br><br>
             <div class="checklist">
                 <input type="checkbox">Learn a new language <br>
